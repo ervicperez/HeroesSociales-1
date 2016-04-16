@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.heroes.nouveau.hackmap.HelpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/question"
+        android:textSize="26dp"
+        android:text="¿Con qué estoy contribuyendo?"
+        android:textAlignment="center"
+        android:textColorHighlight="#6f6f6f"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/comida"
+        android:layout_below="@+id/question"
+        android:textSize="15dp"
+        android:text="Alimentos"
+        android:textColorHighlight="#6f6f6f"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/salud"
+        android:layout_below="@+id/comida"
+        android:textSize="15dp"
+        android:text="Servicio/cuidado médico"
+        android:textColorHighlight="#6f6f6f"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/ropa"
+        android:layout_below="@+id/salud"
+        android:textSize="15dp"
+        android:text="Alimentos"
+        android:textColorHighlight="#6f6f6f"
+        android:textColor="#000000" />
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/food"
+        android:background="@drawable/foodyeah"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/health"
+        android:background="@drawable/healthyeah"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/wear"
+        android:background="@drawable/clotheyeah"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/comentario"
+        android:layout_alignParentBottom="true"
+        android:textSize="18dp"
+        android:hint="¿Consideras que necesita de urgencia algo más? Escribe lo que observas."
+        android:textColorHighlight="#6f6f6f"
+        android:textColor="#000000" />
+</RelativeLayout>
